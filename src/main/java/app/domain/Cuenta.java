@@ -2,10 +2,15 @@ package app.domain;
 
 import app.enums.TipoCuenta;
 import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
 
 import java.math.BigDecimal;
+import java.time.LocalDate;
 import java.util.Date;
 
+@Setter
+@Getter
 @Entity
 public class Cuenta {
 
@@ -18,7 +23,7 @@ public class Cuenta {
     private Usuario usuario;
 
     private BigDecimal saldo;
-    private Date fechaCreacion;
+    private LocalDate fechaCreacion;
 
     @Enumerated(EnumType.STRING)
     private TipoCuenta tipo;
