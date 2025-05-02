@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<div th:fragment="navbar(active)">
+    <nav>
+        <ul>
+            <li th:classappend="${active == 'home'} ? 'active'">
+                <a th:href="@{/}">Home</a>
+            </li>
+            <li th:classappend="${active == 'cuentas'} ? 'active'">
+                <a th:href="@{/cuentas}">Mis Cuentas</a>
+            </li>
+            <li th:classappend="${active == 'cotizaciones'} ? 'active'">
+                <a th:href="@{/cotizaciones}">Cotizaciones</a>
+            </li>
+            <li th:classappend="${active == 'perfil'} ? 'active'">
+                <a th:href="@{/perfil}">Mi Perfil</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+</body>
+</html>

@@ -1,5 +1,30 @@
-<!-- cotizaciones.html -->
-<div th:fragment="contenido">
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:replace="layout :: layout">
+<body>
+<div>
     <h1>Cotizaciones</h1>
-    <p>Consulta las últimas cotizaciones de divisas y acciones.</p>
+    <p>Consulta los valores actualizados:</p>
+    <table>
+        <thead>
+        <tr>
+            <th>Moneda</th>
+            <th>Compra</th>
+            <th>Venta</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Dólar</td>
+            <td>$850</td>
+            <td>$870</td>
+        </tr>
+        <tr>
+            <td>Euro</td>
+            <td>$920</td>
+            <td>$940</td>
+        </tr>
+        </tbody>
+    </table>
 </div>
+</body>
+</html>

@@ -1,45 +1,17 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org" lang="es" th:fragment="layout">
+<html xmlns:th="http://www.thymeleaf.org" lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Banca Online</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-        }
-        nav {
-            background-color: #003366;
-            color: white;
-            padding: 1rem;
-        }
-        nav a {
-            color: white;
-            margin-right: 20px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        main {
-            padding: 2rem;
-        }
-    </style>
+    <title th:text="${title}">Mi Banco</title>
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
-
-<nav>
-    <a th:href="@{/}">🏦 Inicio</a>
-    <a th:href="@{/cuentas}">💳 Mis Cuentas</a>
-    <a th:href="@{/cotizaciones}">💱 Cotizaciones</a>
-    <a th:href="@{/perfil}">🙍 Mi Perfil</a>
-</nav>
+<!-- Barra de navegación -->
+<div th:replace="fragments/nav :: navbar(active=${activeMenu})"></div>
 
 <main>
-    <!-- Este es el espacio donde se insertará el contenido dinámico de cada página -->
-    <div th:replace="${contenido}"></div> <!-- Aquí se inserta el contenido dinámico -->
+    <!-- Aquí se inserta el contenido de cada página -->
+    <div th:replace="${content}"></div> <!-- Esto se reemplazará con el contenido específico de cada página -->
 </main>
-
 </body>
 </html>
