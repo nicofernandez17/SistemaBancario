@@ -1,7 +1,7 @@
 package app.servicios;
 
-import app.enums.EstadoOperacion;
-import app.operaciones.Operacion;
+import app.models.enums.EstadoOperacion;
+import app.models.operaciones.Operacion;
 import app.repositorios.RepoOperaciones;
 import org.springframework.stereotype.Service;
 

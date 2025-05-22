@@ -1,6 +1,6 @@
 package app.servicios;
 
-import app.domain.Usuario;
+import app.models.domain.Usuario;
 import app.repositorios.RepoUsuarios;
 import org.springframework.stereotype.Service;
 

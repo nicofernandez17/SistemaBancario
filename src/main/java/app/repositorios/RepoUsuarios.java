@@ -1,6 +1,6 @@
 package app.repositorios;
 
-import app.domain.Usuario;
+import app.models.domain.Usuario;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface RepoUsuarios extends JpaRepository<Usuario, Long> {

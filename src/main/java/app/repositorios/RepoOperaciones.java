@@ -1,7 +1,7 @@
 package app.repositorios;
 
-import app.enums.EstadoOperacion;
-import app.operaciones.Operacion;
+import app.models.enums.EstadoOperacion;
+import app.models.operaciones.Operacion;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;

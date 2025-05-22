@@ -1,4 +1,4 @@
-package app.enums;
+package app.models.enums;
 
 public enum EstadoOperacion {
     EJECUTADA, PENDIENTE, FALLIDA

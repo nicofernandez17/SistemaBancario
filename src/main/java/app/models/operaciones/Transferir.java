@@ -1,6 +1,6 @@
-package app.operaciones;
+package app.models.operaciones;
 
-import app.domain.Cuenta;
+import app.models.domain.Cuenta;
 import jakarta.persistence.DiscriminatorValue;
 import jakarta.persistence.Entity;
 import jakarta.persistence.JoinColumn;

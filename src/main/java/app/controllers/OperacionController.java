@@ -1,6 +1,6 @@
 package app.controllers;
 
-import app.operaciones.Operacion;
+import app.models.operaciones.Operacion;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import app.servicios.OperacionService;

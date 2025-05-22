@@ -1,6 +1,6 @@
 package app.controllers;
 
-import app.domain.Usuario;
+import app.models.domain.Usuario;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import app.servicios.UsuarioService;

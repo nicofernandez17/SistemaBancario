@@ -1,4 +1,4 @@
-package app.domain;
+package app.models.domain;
 
 import jakarta.persistence.*;
 import lombok.Getter;

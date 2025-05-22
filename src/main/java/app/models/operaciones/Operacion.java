@@ -1,7 +1,7 @@
-package app.operaciones;
+package app.models.operaciones;
 
-import app.domain.Cuenta;
-import app.enums.EstadoOperacion;
+import app.models.domain.Cuenta;
+import app.models.enums.EstadoOperacion;
 import jakarta.persistence.*;
 
 import java.math.BigDecimal;

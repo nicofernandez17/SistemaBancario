@@ -1,4 +1,4 @@
-package app.operaciones;
+package app.models.operaciones;
 
 import jakarta.persistence.*;
 

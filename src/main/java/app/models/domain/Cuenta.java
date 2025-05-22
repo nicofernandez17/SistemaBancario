@@ -1,13 +1,12 @@
-package app.domain;
+package app.models.domain;
 
-import app.enums.TipoCuenta;
+import app.models.enums.TipoCuenta;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
-import java.util.Date;
 
 @Setter
 @Getter
