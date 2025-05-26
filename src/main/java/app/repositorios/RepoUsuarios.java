@@ -2,7 +2,9 @@ package app.repositorios;
 
 import app.models.domain.Usuario;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
+@Repository
 public interface RepoUsuarios extends JpaRepository<Usuario, Long> {
 
     public Usuario findByNombre(String nombre);
